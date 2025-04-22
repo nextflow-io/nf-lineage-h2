@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="nextflow.lineage.h2.H2LinHistoryLogTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-04-22T20:30:08" hostname="Paolos-MacBook-Pro.local" time="0.048">
+  <properties/>
+  <testcase name="should write lid record" classname="nextflow.lineage.h2.H2LinHistoryLogTest" time="0.027"/>
+  <testcase name="should update run lid" classname="nextflow.lineage.h2.H2LinHistoryLogTest" time="0.009"/>
+  <testcase name="should update get records" classname="nextflow.lineage.h2.H2LinHistoryLogTest" time="0.012"/>
+  <system-out><![CDATA[22:30:08.239 [Test worker] INFO nextflow.lineage.h2.H2LinStore -- Connecting CID H2 store: 'jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1'
+22:30:08.245 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- Driver class org.h2.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@63c12fb0
+22:30:08.249 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- HikariPool-1 - configuration:
+22:30:08.252 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- allowPoolSuspension.............false
+22:30:08.252 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- autoCommit......................true
+22:30:08.252 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- catalog.........................none
+22:30:08.252 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- connectionInitSql...............none
+22:30:08.252 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- connectionTestQuery.............none
+22:30:08.252 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- connectionTimeout...............30000
+22:30:08.252 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- dataSource......................none
+22:30:08.252 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceClassName.............none
+22:30:08.253 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceJNDI..................none
+22:30:08.253 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceProperties............{password=<masked>}
+22:30:08.253 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- driverClassName................."org.h2.Driver"
+22:30:08.253 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- exceptionOverrideClassName......none
+22:30:08.253 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- healthCheckProperties...........{}
+22:30:08.253 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- healthCheckRegistry.............none
+22:30:08.253 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- idleTimeout.....................600000
+22:30:08.253 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- initializationFailTimeout.......1
+22:30:08.253 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- isolateInternalQueries..........false
+22:30:08.253 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- jdbcUrl.........................jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+22:30:08.253 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- keepaliveTime...................0
+22:30:08.253 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- leakDetectionThreshold..........0
+22:30:08.253 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- maxLifetime.....................1800000
+22:30:08.253 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- maximumPoolSize.................10
+22:30:08.254 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- metricRegistry..................none
+22:30:08.254 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- metricsTrackerFactory...........none
+22:30:08.254 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- minimumIdle.....................10
+22:30:08.254 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- password........................<masked>
+22:30:08.254 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- poolName........................"HikariPool-1"
+22:30:08.254 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- readOnly........................false
+22:30:08.254 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- registerMbeans..................false
+22:30:08.254 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- scheduledExecutor...............none
+22:30:08.254 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- schema..........................none
+22:30:08.254 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- threadFactory...................internal
+22:30:08.254 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- transactionIsolation............default
+22:30:08.254 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- username........................"sa"
+22:30:08.254 [Test worker] DEBUG com.zaxxer.hikari.HikariConfig -- validationTimeout...............5000
+22:30:08.254 [Test worker] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-1 - Starting...
+22:30:08.321 [Test worker] INFO com.zaxxer.hikari.pool.HikariPool -- HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+22:30:08.322 [Test worker] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-1 - Start completed.
+Truncating all tables...
+All tables truncated successfully
+22:30:08.371 [Test worker] DEBUG nextflow.lineage.h2.H2LinHistoryLog -- Successfully updated run_lid for session_id: 4c74a29a-bbd8-412d-91b4-050cd7cb12f4
+Truncating all tables...
+All tables truncated successfully
+Truncating all tables...
+All tables truncated successfully
+22:30:08.386 [Test worker] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-1 - Shutdown initiated...
+22:30:08.387 [Test worker] DEBUG com.zaxxer.hikari.pool.HikariPool -- HikariPool-1 - Before shutdown stats (total=1, active=0, idle=1, waiting=0)
+22:30:08.387 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase -- HikariPool-1 - Closing connection conn0: url=jdbc:h2:mem:testdb user=SA: (connection evicted)
+22:30:08.388 [Test worker] DEBUG com.zaxxer.hikari.pool.HikariPool -- HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+22:30:08.388 [Test worker] INFO com.zaxxer.hikari.HikariDataSource -- HikariPool-1 - Shutdown completed.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
